@@ -1,8 +1,8 @@
 import './index.scss';
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
-import SubLogo from '../../assets/images/Sub-Logo.png';
-import MainLogo from '../../assets/images/Main-Logo.png';
+import SubLogo from '../../assets/images/SubLogo.png';
+import MainLogo from '../../assets/images/MainLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faLinkedin,
