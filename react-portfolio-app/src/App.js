@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
-import {  Layout } from './components/layout/index';
+import { Layout } from './components/layout/index';
 
 
 function App() {
