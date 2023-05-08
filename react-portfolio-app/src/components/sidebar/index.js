@@ -6,9 +6,7 @@ import MainLogo from '../../assets/images/Main-Logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faLinkedin,
-    faGithub,
-    faYoutube,
-    faSkype,
+    faGithub
   } from '@fortawesome/free-brands-svg-icons'
   import {
     faHome,
@@ -36,6 +34,13 @@ const Sidebar = () => {
     onClick={() => setShowNav(false)}>
         <FontAwesomeIcon icon={faHome} color='#4d4d4e'/>
     </NavLink>
+    <NavLink 
+          activeclassname="active"
+          className="about-link"
+          to="/about"
+          onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
     <NavLink
           activeclassname="active"
           className="portfolio-link"
@@ -59,6 +64,42 @@ const Sidebar = () => {
           size="3x"
           className='close-icon' />
 </nav>
+    <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/megan-mccartney-aab704b0/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/Meg-Hinckley35"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faGithub}
+              color="#4d4d4e"
+              className="anchor-icon"
+            />
+          </a>
+        </li>
+        </ul>
+      <FontAwesomeIcon 
+          onClick={() => setShowNav(true)}
+          icon={faBars}
+          color="#ffd700"
+          size="3x"
+          className='hamburger-icon' />
+
+
     </div>
 )};
 
