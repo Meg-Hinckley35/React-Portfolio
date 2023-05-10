@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../animated letters/index';
 import './index.scss'
 
 const Contact = () => {

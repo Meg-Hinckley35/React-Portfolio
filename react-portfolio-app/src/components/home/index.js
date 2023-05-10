@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import SubLogo from '../../assets/images/SubLogo.png'
+import Sunflower from '../home/logo/index'
 import './index.scss'
 
 const Home = () => {
@@ -63,6 +64,7 @@ const Home = () => {
               CONTACT ME
             </Link>
           </div>
+          <Sunflower/>
         </div>
   
         <Loader type="pacman" />
